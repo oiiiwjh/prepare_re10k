@@ -29,7 +29,7 @@ This folder contains helper scripts and an example `run.sh` that demonstrates th
 The included `run.sh` sets example variables and runs the pipeline. Update the top of `run.sh` and then run it, or run the commands below manually.
 
 Example (manual) commands — replace paths to match your environment:
-
+```python
 base_dir=/path/to/re10k_hf
 tag=test # or 'train'
 
@@ -51,6 +51,7 @@ python generate_realestate_csv.py \
 	--clips_info ${tag}_pose.json \
 	--save_csv /path/to/${tag}_metadata.csv
 
+```
 Notes and tips:
 - `--num_workers` controls parallelism for clip extraction. Increase to speed up on multi-core machines, but watch memory and disk I/O: each worker opens a separate video handle and stores frames in memory briefly.
 - `generate_realestate_csv.py` writes a CSV file. The CSV columns (in order) are: `clip_name`, `clip_path`, `pose_file`, `caption`.
