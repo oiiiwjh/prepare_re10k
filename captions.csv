@@ -1,0 +1,2 @@
+src_video,clip_name,clip_path,pose_file,pose_npy_file,caption
+3b7443b24830d388,/home/wjh/CameraCtrl/prepare_re10k/clips/aQrpKhTG4a4/3b7443b24830d388.mp4,/share/wjh/RealEstate10K/test/3b7443b24830d388.txt,/share/wjh/RealEstate10K/test_npy/3b7443b24830d388.npy,an empty hallway with a vase of flowers on the floor
