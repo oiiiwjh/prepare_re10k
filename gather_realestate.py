@@ -19,7 +19,7 @@ if __name__ == "__main__":
     all_txts = os.listdir(args.pose_folder)
     print(f'There are {len(all_txts)} video clips in the folder {args.pose_folder}')
     video_paths = defaultdict(list)
-    for txt in tqdm(all_txts[:1]):
+    for txt in tqdm(all_txts):
         with open(osp.join(args.pose_folder, txt), 'r') as f:
             lines = f.readlines()
         video_name = lines[0].strip().split('=')[-1]
